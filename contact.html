@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>abhilash</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  <link rel="stylesheet" type="text/css" href="style1.css">
+  <link rel="stylesheet" type="text/css" href="st.css"> 
+  <style>
+    body {
+      background-image: url('japan1.jpg');
+      background-repeat: no-repeat;
+      background-attachment: fixed; 
+      background-size: 100% 100%;
+    }
+
+    .contact-form input[type="text"],
+    .contact-form input[type="email"],
+    .contact-form textarea {
+      width: 300px; /* Adjust the width as needed */
+      font-size: 14px;
+      padding: 8px;
+      border: 1px solid #ed1212;
+      border-radius: 21px;
+      box-sizing: border-box;
+    }
+
+    .contact-form input[type="submit"] {
+      font-size: 12px; /* Adjust the font size as needed */
+      padding: 4px 8px; /* Adjust the padding as needed */
+      width: 80px; /* Adjust the width as needed */
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>MY PERSONAL WEBSITE</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="bio.html">Bio</a></li>
+        <li><a href="qualification.html">Qualification</a></li>
+        <li><a href="achievement.html">Achievement</a></li>
+        <li><a href="hobbies.html">Hobbies</a></li>
+        <li><a href="gallery.html">Photo Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <section class="content">
+    <h2 style="font-size: 30px; color: rgb(10, 10, 10);">Contact</h2>
+    <form class="contact-form" action="submit_form.php" method="POST">
+      <label for="name" style="color: black;">Name:</label>
+      <input type="text" id="name" name="name"  required>
+      
+      <label for="email" style="color: black;">Email:</label>
+      <input type="email" id="email" name="email" required>
+      
+      <label for="message" style="color: black;">Message:</label>
+      <textarea id="message" name="message" required style="height: 86px;"></textarea>
+      
+      <input type="submit" value="Send">
+    </form>
+  </section>
+</body>
+</html>
